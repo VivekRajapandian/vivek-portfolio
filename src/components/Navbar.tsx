@@ -10,17 +10,29 @@ export default function Navbar() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.logo}>Vivek Rajapandian</div>
+      <div className={styles.navbar}>
+        <div className={styles.brand}>Vivek Rajapandian</div>
 
-        <nav className={styles.nav}>
-          <button onClick={() => scrollToSection("projects")} className={styles.link}>
+        <nav className={styles.navLinks}>
+          <button
+            type="button"
+            className={styles.navButton}
+            onClick={() => scrollToSection("projects")}
+          >
             Projects
           </button>
-          <button onClick={() => scrollToSection("about")} className={styles.link}>
+          <button
+            type="button"
+            className={styles.navButton}
+            onClick={() => scrollToSection("about")}
+          >
             About
           </button>
-          <button onClick={() => scrollToSection("contact")} className={styles.link}>
+          <button
+            type="button"
+            className={styles.navButton}
+            onClick={() => scrollToSection("contact")}
+          >
             Contact
           </button>
         </nav>
