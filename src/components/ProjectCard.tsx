@@ -20,14 +20,18 @@ export default function ProjectCard({
   imageUrl,
 }: ProjectCardProps) {
   return (
-    <div className={styles.card}>
-      {imageUrl && (
-        <div className={styles.imageWrapper}>
+    <article className={styles.card}>
+      <div className={styles.imagePanel}>
+        {imageUrl ? (
           <img src={imageUrl} alt={title} className={styles.image} />
-        </div>
-      )}
+        ) : (
+          <div className={styles.imagePlaceholder}>
+            <span>Project Preview</span>
+          </div>
+        )}
+      </div>
 
-      <div className={styles.content}>
+      <div className={styles.contentPanel}>
         <p className={styles.impact}>{impact}</p>
 
         <h3 className={styles.title}>{title}</h3>
@@ -50,7 +54,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className={styles.linkPrimary}
             >
-              Live →
+              Live Project →
             </a>
           )}
 
@@ -61,11 +65,11 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className={styles.linkSecondary}
             >
-              Code →
+              View Code →
             </a>
           )}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
