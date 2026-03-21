@@ -166,6 +166,73 @@
   color: var(--text-muted);
 }
 
+.leftPanel,
+.rightPanel {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.leftPanel:hover,
+.rightPanel:hover {
+  transform: translateY(-4px);
+  border-color: rgba(148, 163, 184, 0.24);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.primaryButton,
+.secondaryButton {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.secondaryButton:hover {
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.28);
+}
+
+
+.aboutCard,
+.contactCard {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.aboutCard:hover,
+.contactCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(148, 163, 184, 0.22);
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.aboutPill,
+.contactPrimary,
+.contactSecondary {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.aboutPill:hover {
+  transform: translateY(-2px);
+}
+
+.contactPrimary:hover,
+.contactSecondary:hover {
+  transform: translateY(-2px);
+}
 @media (max-width: 700px) {
   .page {
     padding: 20px 16px 48px;

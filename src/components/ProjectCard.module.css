@@ -14,6 +14,18 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(148, 163, 184, 0.24);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .imagePanel {
@@ -33,6 +45,11 @@
   object-fit: cover;
   display: block;
   background: #0f172a;
+  transition: transform 0.45s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.03);
 }
 
 .imagePlaceholder {
@@ -100,6 +117,15 @@
   font-size: 0.92rem;
   font-weight: 600;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.tag:hover {
+  transform: translateY(-1px);
+  border-color: rgba(147, 197, 253, 0.28);
 }
 
 .links {
@@ -114,7 +140,9 @@
   text-decoration: none;
   font-size: 0.98rem;
   font-weight: 700;
-  transition: opacity 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .linkPrimary {
@@ -127,7 +155,8 @@
 
 .linkPrimary:hover,
 .linkSecondary:hover {
-  opacity: 0.85;
+  opacity: 0.9;
+  transform: translateX(2px);
 }
 
 @media (max-width: 980px) {

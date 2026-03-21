@@ -63,3 +63,47 @@ select {
 #root {
   min-height: 100vh;
 }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.revealDelay1 {
+  animation-delay: 0.12s;
+}
+
+.revealDelay2 {
+  animation-delay: 0.24s;
+}
+
+.revealDelay3 {
+  animation-delay: 0.36s;
+}
+
+.revealDelay4 {
+  animation-delay: 0.48s;
+}
