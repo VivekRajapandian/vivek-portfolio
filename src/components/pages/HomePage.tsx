@@ -1,6 +1,6 @@
-import HeroSection from "../components/HeroSection";
-import Navbar from "../components/Navbar";
-import ProjectCard from "../components/ProjectCard";
+import HeroSection from "../HeroSection";
+import Navbar from "../Navbar";
+import ProjectCard from "../ProjectCard";
 import styles from "./HomePage.module.css";
 
 export default function HomePage() {
