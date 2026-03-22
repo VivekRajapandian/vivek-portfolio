@@ -1,4 +1,6 @@
 import styles from "./Navbar.module.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Navbar() {
   const scrollToSection = (sectionId: string) => {
@@ -14,6 +16,11 @@ export default function Navbar() {
         <div className={styles.brand}>Vivek Rajapandian</div>
 
         <nav className={styles.navLinks}>
+          
+        </nav>
+
+        {/* ⭐ NEW SOCIAL ICONS — SAFE */}
+        <div className={styles.socials}>
           <button
             type="button"
             className={styles.navButton}
@@ -21,6 +28,7 @@ export default function Navbar() {
           >
             Projects
           </button>
+
           <button
             type="button"
             className={styles.navButton}
@@ -28,6 +36,7 @@ export default function Navbar() {
           >
             About
           </button>
+
           <button
             type="button"
             className={styles.navButton}
@@ -35,7 +44,33 @@ export default function Navbar() {
           >
             Contact
           </button>
-        </nav>
+          <a
+            href="https://www.linkedin.com/in/vivek-rajapandian-a6a148116"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.iconLink}
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://github.com/VivekRajapandian"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.iconLink}
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://leetcode.com/u/vivekrajapandian/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.iconLink}
+          >
+            <SiLeetcode />
+          </a>
+        </div>
       </div>
     </header>
   );
