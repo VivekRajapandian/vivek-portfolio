@@ -32,7 +32,7 @@ export default function HomePage() {
                 "PostgreSQL",
                 "OpenAI",
               ]}
-              liveLink="http://localhost:3000/login"
+              liveLink="https://lfl.vrcodeforge.com/"
               codeLink="https://github.com/VivekRajapandian/letter-from-my-future"
               imageUrl="/project-placeholders/letter-from-future.png"
             />
